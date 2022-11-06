@@ -1,0 +1,56 @@
+.box1{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 2s all;
+    transition-delay: 2s;
+    transition-timing-function: ease-in;
+}
+.box1:hover{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.box2{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    animation: transform 2s infinite;
+}
+.box2:hover{
+    width: 200px;
+    height: 200px;
+}
+@keyframes transform{
+    0%{transform: rotate(0 deg)};
+    50%{transform: rotate(360 deg)};
+    100%{transform: rotate(0 deg)};
+}
+
+
+
+.grid-container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    background-color: green;
+}
+.Item1{
+    grid-column: 1 / span2;;
+}
+.Item2{
+    grid-column: 1 / 4;
+}
+.Item3{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 3;
+}
+.Item4{
+    grid-column: 1 / 5;;
+}
